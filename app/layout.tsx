@@ -16,7 +16,13 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "CLT Show App - Beta",
-  description: "A Records On The Wall Application",
+  description: "Find upcoming shows at Charlotte's top independent music venues",
+  icons: [
+    { rel: 'icon', url: '/favicon.ico' },
+    { rel: 'apple-touch-icon', sizes: '180x180', url: '/icon-180.png' },
+    { rel: 'icon', type: 'image/png', sizes: '192x192', url: '/icon-192.png' },
+  ],
+  manifest: '/manifest.json',
 };
 
 
