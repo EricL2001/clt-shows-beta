@@ -10,8 +10,8 @@ export async function getVisuliteShows() {
       const data = await response.json();
 
     // Add these console.logs:
-    console.log('Raw JSON data:', JSON.stringify(data, null, 2));
-    console.log('Date for first event:', data[0].event_date);
+    //console.log('Raw JSON data:', JSON.stringify(data, null, 2));
+    //console.log('Date for first event:', data[0].event_date);
    
 
     return data.map((show: { band_name: string; second_band?: string; venue_name: string; event_date: string; href: string; image_src: string}) => ({
