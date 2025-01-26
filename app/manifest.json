@@ -13,5 +13,6 @@
         "type": "image/png"
       }
     ],
+    "backgroup_color": "#ffffff",
     "display": "standalone"
   }
