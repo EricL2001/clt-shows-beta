@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 
 export const metadata: Metadata = {
-  title: "GO.SEE.MUSIC.CLT",
+  title: "CLT Show App - Beta",
   description: "A Records On The Wall Application",
 };
 
