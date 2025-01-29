@@ -23,6 +23,17 @@ export const venueData: VenueInfo[] = [
     name: 'Neighborhood Theatre',
     data: [],
     fetchData: getNeighborhoodShows
+  },
+  {
+    id: 'musedata',
+    name: 'The Evening Muse',
+    data: []
+  },
+  {
+    id: 'snugdata',
+    name: 'Snug Harbor',
+    data: []
   }
+
 ]
 

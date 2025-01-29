@@ -6,7 +6,11 @@ export async function getVisuliteShows() {
   try {
 
     // await delay(3000);  // Simulate slow network - REMOVE BEFORE PRODUCTION
-      const response = await fetch('/api/viz-shows');
+      const response = await fetch('/api/viz-shows', {
+        next: {
+          revalidate: 3600, // Every hour in seconds
+        }
+      });
       const data = await response.json();
 
     // Add these console.logs:
@@ -35,7 +39,11 @@ export async function getNeighborhoodShows() {
   try {
 
       // await delay(3000);  // Simulate slow network - REMOVE BEFORE PRODUCTION
-      const response = await fetch('/api/nt-shows');
+      const response = await fetch('/api/nt-shows', {
+        next: {
+          revalidate: 3600, // Every hour in seconds
+        }
+      });
       const data = await response.json();
 
     // Add these console.logs:

@@ -1,5 +1,7 @@
 import { neon } from '@neondatabase/serverless';
 
+export const revalidate = 3600 // invalidate every hour
+
 // get events from visulite and remove old shows
 const viz = neon(process.env.DATABASE_URL!);
 

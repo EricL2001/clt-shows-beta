@@ -1,5 +1,7 @@
 import { neon } from '@neondatabase/serverless';
 
+export const revalidate = 3600 // invalidate every hour
+
 // get all events from neighborhood and remove old shows
 const nt = neon(process.env.DATABASE_URL_1!);
 
