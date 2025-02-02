@@ -5,9 +5,9 @@ export default function HeroSection({ setActiveVenue }: { setActiveVenue: (venue
     return (
       <div className="flex-1 bg-gray-900 text-white">
         <div className="container mx-auto px-4 pt-16 pb-8 flex flex-col text-center align-center">
-          <h1 className="text-5xl font-bold mb-4">GO. SEE. MUSIC. CLT</h1>
+          <h1 className="text-5xl font-bold mb-4">SEE. MORE. MUSIC. CLT</h1>
           <p className="text-xl mb-6 max-w-2xl mx-auto">
-            Browse shows at independent venues in Charlotte
+            Browse shows at venues in Charlotte
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             {venueData.map((venue) => (

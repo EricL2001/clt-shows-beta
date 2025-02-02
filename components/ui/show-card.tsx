@@ -4,7 +4,7 @@ import { Button } from './button'
 
 export default function ShowCard({ show, handleClick }: { show: Show, handleClick: (href: string) => void }) {
     return (
-      <div className="bg-gray-800 p-6 rounded-lg">
+      <div className="bg-gray-800 p-6 rounded-lg border-[0.5px] border-white">
         <Image
           src={show.imageSrc}
           alt={show.imageAlt}
