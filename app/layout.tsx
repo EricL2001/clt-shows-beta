@@ -17,14 +17,32 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "CLT Show App - Beta",
   description: "Find upcoming shows at Charlotte's top independent music venues",
-  icons: [
-    { rel: 'icon', url: '/favicon.ico' },
-    { rel: 'apple-touch-icon', sizes: '180x180', url: '/icon-180.png' },
-    { rel: 'icon', type: 'image/png', sizes: '192x192', url: '/icon-192.png' },
-  ],
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  themeColor: "#111827", // matches your bg-gray-900
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "CLT Shows",
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon-and-192.jpg', sizes: '192x192', type: 'image/jpg' },
+      { url: '/icon-512.jpg', sizes: '512x512', type: 'image/jpg' },
+    ],
+    apple: [
+      { url: '/icon-ios-180.jpg', sizes: '180x180', type: 'image/jpg' },
+    ],
+  },
   manifest: '/manifest.json',
+  applicationName: "CLT Shows",
+  openGraph: {
+    type: 'website',
+    siteName: 'CLT Shows',
+    title: 'CLT Show App - Beta',
+    description: 'Find upcoming shows at Charlotte\'s top independent music venues',
+  },
 };
-
 
 export default function RootLayout({
   children,
